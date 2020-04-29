@@ -1,5 +1,5 @@
 const express = require('express');
-const router = express.Route();
+const router = express.Router();
 const Blog = require('../models/Blog');
 const {
   getAllBlogs,
@@ -24,4 +24,4 @@ router.put('/blog/:id', updateBlog);
 
 router.delete('/blog/:id', deleteBlog);
 
-module.exports = route;
+module.exports = router;
